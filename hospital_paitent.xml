@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Aug 27, 2020 at 04:22 PM
+- Server version: 10.4.11-MariaDB
+- PHP Version: 7.2.27
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="hospital paitent" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="paitent">
+                CREATE TABLE `paitent` (
+                  `ID` int(11) NOT NULL AUTO_INCREMENT,
+                  `Paitent Name` varchar(30) DEFAULT NULL,
+                  `Age` int(10) DEFAULT NULL,
+                  `Dateofbirth` date DEFAULT NULL,
+                  `Symptom` text DEFAULT NULL,
+                  `Section` varchar(50) DEFAULT NULL,
+                  PRIMARY KEY (`ID`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'hospital paitent'
+    -->
+    <database name="hospital paitent">
+        <!-- Table paitent -->
+        <table name="paitent">
+            <column name="ID">1</column>
+            <column name="Paitent Name">Maruf Ahmed</column>
+            <column name="Age">12</column>
+            <column name="Dateofbirth">2010-09-12</column>
+            <column name="Symptom">NULL</column>
+            <column name="Section">Orthopedics</column>
+        </table>
+        <table name="paitent">
+            <column name="ID">2</column>
+            <column name="Paitent Name">Sajid</column>
+            <column name="Age">30</column>
+            <column name="Dateofbirth">1990-06-11</column>
+            <column name="Symptom"></column>
+            <column name="Section">NICU</column>
+        </table>
+        <table name="paitent">
+            <column name="ID">5</column>
+            <column name="Paitent Name">Shirin Akter</column>
+            <column name="Age">25</column>
+            <column name="Dateofbirth">1995-07-08</column>
+            <column name="Symptom">NULL</column>
+            <column name="Section">Gyenacology</column>
+        </table>
+    </database>
+</pma_xml_export>
